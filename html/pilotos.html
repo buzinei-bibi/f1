@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pilotos fórmula 1</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-red-950 text-white uppercase overflow-x-hidden">
+
+    <!-- header -->
+    <header class="w-full bg-red-950 fixed top-0 left-0 shadow-lg z-50">
+
+        <div class="w-full max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+
+            <!-- botão hamburguer -->
+            <button id="menu-toggle" class="md:hidden text-white text-3xl">
+                <i id="menu-icon" class="bi bi-list"></i>
+            </button>
+
+            <!-- logo -->
+            <div>
+                <img src="imagens/logotipo.png" class="w-28 h-10 object-contain" alt="logotipo">
+            </div>
+
+            <!-- menu desktop -->
+            <nav class="hidden md:flex items-center gap-4 text-lg font-medium">
+            </nav>
+
+            <!-- usuário -->
+            <a href="#" class="text-2xl hover:text-red-400 transition duration-300">
+                <i class="bi bi-person-circle"></i>
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black/60 hidden z-40 md:hidden"></div>
+
+    <!-- menu mobile -->
+    <div id="mobile-menu"
+        class="fixed top-0 left-0 h-full w-64 bg-red-950 z-50 pt-24 px-6 transform -translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
+
+        <nav class="flex flex-col gap-6 text-lg font-bold">
+        </nav>
+
+    </div>
+    <main class="w-full pt-16 md:pt-20">
+
+        <!-- banner -->
+        <section id="home"
+            class="relative w-full min-h-[520px] md:h-screen overflow-hidden flex items-center justify-center">
+
+            <video src="imagens/banner.mp4" class="absolute inset-0 w-full h-full object-cover" autoplay muted
+                loop></video>
+
+            <div class="absolute inset-0 bg-black/70"></div>
+
+            <div class="relative z-10 text-center px-4 sm:px-6 max-w-6xl mx-auto">
+
+                <p
+                    class="text-red-400 tracking-[5px] sm:tracking-[10px] text-base sm:text-lg md:text-2xl font-bold mb-4 md:mb-6">
+                    fórmula 1
+                </p>
+
+                <h1
+                    class="text-5xl sm:text-7xl md:text-[10rem] font-black tracking-[4px] sm:tracking-[10px] mb-6 md:mb-8 break-words">
+                    pilotos
+                </h1>
+
+                <p class="max-w-4xl mx-auto text-gray-200 text-lg sm:text-xl md:text-3xl leading-relaxed">
+                    velocidade, rivalidade, coragem e talento dentro das pistas.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- pilotos -->
+        <section id="pilotos" class="w-full py-10 md:py-12 bg-red-950">
+
+            <div class="flex items-center justify-center gap-3 md:gap-4 mb-10 md:mb-14 px-4 sm:px-6">
+
+                <div class="hidden sm:block w-1/4 h-[2px] bg-red-500"></div>
+
+                <div class="flex items-center justify-center gap-2 md:gap-3 text-center flex-wrap">
+
+                    <img src="imagens/f1-car.png" class="w-9 h-9 sm:w-12 sm:h-12 object-contain" alt="f1">
+
+                    <h2 class="text-3xl sm:text-4xl md:text-6xl font-black tracking-widest">
+                        lendas da pista
+                    </h2>
+
+                    <img src="imagens/helmet.png" class="w-9 h-9 sm:w-12 sm:h-12 object-contain" alt="helmet">
+
+                </div>
+
+                <div class="hidden sm:block w-1/4 h-[2px] bg-red-500"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+
+                <!-- card -->
+                <div
+                    class="group bg-[#4a0000] rounded-3xl overflow-hidden border border-black shadow-2xl hover:-translate-y-2 md:hover:-translate-y-4 hover:shadow-red-900/80 transition duration-500">
+
+                    <div class="relative h-[320px] sm:h-[380px] md:h-[430px] overflow-hidden">
+
+                        <img src="imagens/lewis hamilton.jpg"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                            alt="lewis hamilton">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+
+                        <div class="absolute bottom-5 left-5 right-5">
+                            <p class="text-red-400 font-bold tracking-[4px]">ferrari</p>
+                            <h3 class="text-3xl sm:text-4xl font-black tracking-widest">lewis hamilton</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="p-5 sm:p-7">
+
+                        <p class="text-gray-300 leading-7 mb-6">
+                            uma lenda viva, conhecido por sua técnica, consistência e história marcante dentro da
+                            fórmula 1.
+                        </p>
+
+                        <div class="grid grid-cols-3 gap-2 sm:gap-3 text-center">
+
+                            <div class="bg-black/30 rounded-xl p-3 border border-red-900">
+                                <p class="text-xl sm:text-2xl font-black">44</p>
+                                <p class="text-xs text-gray-400">número</p>
+                            </div>
+
+                            <div class="bg-black/30 rounded-xl p-3 border border-red-900">
+                                <p class="text-xl sm:text-2xl font-black">7x</p>
+                                <p class="text-xs text-gray-400">campeão</p>
+                            </div>
+
+                            <div class="bg-black/30 rounded-xl p-3 border border-red-900">
+                                <p class="text-xl sm:text-2xl font-black">🇬🇧</p>
+                                <p class="text-xs text-gray-400">país</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div
+                    class="group bg-[#4a0000] rounded-3xl overflow-hidden border border-black shadow-2xl hover:-translate-y-2 md:hover:-translate-y-4 hover:shadow-red-900/80 transition duration-500">
+
+                    <div class="relative h-[320px] sm:h-[380px] md:h-[430px] overflow-hidden">
+
+                        <img src="imagens/max verstappen.jpg"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                            alt="max verstappen">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+
+                        <div class="absolute bottom-5 left-5 right-5">
+                            <p class="text-orange-500 font-bold tracking-[4px]">red bull racing</p>
+                            <h3 class="text-3xl sm:text-4xl font-black tracking-widest">max verstappen</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="p-5 sm:p-7">
+
+                        <p class="text-gray-300 leading-7 mb-6">
+                            agressivo, frio e extremamente rápido, verstappen representa uma nova geração dominante da
+                            fórmula 1.
+                        </p>
+
+                        <div class="grid grid-cols-3 gap-2 sm:gap-3 text-center">
+
+                            <div class="bg-black/30 rounded-xl p-3 border border-red-900">
+                                <p class="text-xl sm:text-2xl font-black">1</p>
+                                <p class="text-xs text-gray-400">número</p>
+                            </div>
+
+                            <div class="bg-black/30 rounded-xl p-3 border border-red-900">
+                                <p class="text-xl sm:text-2xl font-black">4x</p>
+                                <p class="text-xs text-gray-400">campeão</p>
+                            </div>
+
+                            <div class="bg-black/30 rounded-xl p-3 border border-red-900">
+                                <p class="text-xl sm:text-2xl font-black">🇳🇱</p>
+                                <p class="text-xs text-gray-400">país</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div
+                    class="group bg-[#4a0000] rounded-3xl overflow-hidden border border-black shadow-2xl hover:-translate-y-2 md:hover:-translate-y-4 hover:shadow-red-900/80 transition duration-500 sm:col-span-2 lg:col-span-1">
+
+                    <div class="relative h-[320px] sm:h-[380px] md:h-[430px] overflow-hidden">
+
+                        <img src="imagens/charles leclerc.jpg"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                            alt="charles leclerc">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+
+                        <div class="absolute bottom-5 left-5 right-5">
+                            <p class="text-red-400 font-bold tracking-[4px]">ferrari</p>
+                            <h3 class="text-3xl sm:text-4xl font-black tracking-widest">charles leclerc</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="p-5 sm:p-7">
+
+                        <p class="text-gray-300 leading-7 mb-6">
+                            talento puro, velocidade em classificações e uma forte ligação com a torcida ferrarista.
+                        </p>
+
+                        <div class="grid grid-cols-3 gap-2 sm:gap-3 text-center">
+
+                            <div class="bg-black/30 rounded-xl p-3 border border-red-900">
+                                <p class="text-xl sm:text-2xl font-black">16</p>
+                                <p class="text-xs text-gray-400">número</p>
+                            </div>
+
+                            <div class="bg-black/30 rounded-xl p-3 border border-red-900">
+                                <p class="text-xl sm:text-2xl font-black">f1</p>
+                                <p class="text-xs text-gray-400">categoria</p>
+                            </div>
+
+                            <div class="bg-black/30 rounded-xl p-3 border border-red-900">
+                                <p class="text-xl sm:text-2xl font-black">🇲🇨</p>
+                                <p class="text-xs text-gray-400">país</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- comparativo -->
+        <section id="comparativo" class="w-full py-12 md:py-16 bg-[#4a0000]">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
+                <div class="flex items-center justify-center gap-3 md:gap-4 mb-10 md:mb-12">
+
+                    <div class="hidden sm:block w-1/4 h-[2px] bg-red-500"></div>
+
+                    <div class="flex items-center justify-center gap-2 md:gap-3 text-center flex-wrap">
+
+                        <img src="imagens/f1-car.png" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" alt="f1">
+
+                        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-widest">
+                            comparativo
+                        </h2>
+
+                        <img src="imagens/helmet.png" class="w-8 h-8 sm:w-10 sm:h-10 object-contain" alt="helmet">
+
+                    </div>
+
+                    <div class="hidden sm:block w-1/4 h-[2px] bg-red-500"></div>
+
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+                    <div class="bg-red-950 rounded-3xl p-6 sm:p-8 border border-black hover:scale-105 duration-300">
+                        <i class="bi bi-lightning-charge-fill text-4xl sm:text-5xl text-red-500"></i>
+                        <h3 class="text-2xl sm:text-3xl font-black mt-5 mb-4">velocidade</h3>
+                        <p class="text-gray-300 leading-7">pilotos que dominam curvas rápidas, retas longas e
+                            ultrapassagens no limite.</p>
+                    </div>
+
+                    <div class="bg-red-950 rounded-3xl p-6 sm:p-8 border border-black hover:scale-105 duration-300">
+                        <i class="bi bi-trophy-fill text-4xl sm:text-5xl text-red-500"></i>
+                        <h3 class="text-2xl sm:text-3xl font-black mt-5 mb-4">conquistas</h3>
+                        <p class="text-gray-300 leading-7">vitórias, campeonatos, poles e momentos históricos que
+                            marcaram a fórmula 1.</p>
+                    </div>
+
+                    <div
+                        class="bg-red-950 rounded-3xl p-6 sm:p-8 border border-black hover:scale-105 duration-300 sm:col-span-2 lg:col-span-1">
+                        <i class="bi bi-fire text-4xl sm:text-5xl text-red-500"></i>
+                        <h3 class="text-2xl sm:text-3xl font-black mt-5 mb-4">rivalidade</h3>
+                        <p class="text-gray-300 leading-7">cada piloto tem um estilo único, criando disputas intensas
+                            dentro e fora das pistas.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer id="contatos" class="w-full py-12 md:py-16 bg-red-950 relative overflow-hidden">
+
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent">
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 md:py-10 relative">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
+
+                <div class="bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-red-500/60 duration-300">
+                    <img src="imagens/logotipo.png" class="w-28 h-10 object-contain mb-4" alt="logotipo">
+
+                    <p class="mb-4 text-xl sm:text-2xl font-bold leading-tight">
+                        acompanhe a <span class="text-red-500">fórmula 1</span>
+                    </p>
+
+                    <div class="flex gap-4 text-2xl">
+                        <a href="#" class="hover:text-red-500 hover:-translate-y-1 duration-300"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="hover:text-red-500 hover:-translate-y-1 duration-300"><i
+                                class="bi bi-twitter"></i></a>
+                        <a href="#" class="hover:text-red-500 hover:-translate-y-1 duration-300"><i
+                                class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-black/20 p-5 rounded-2xl border border-white/10">
+                    <h2 class="text-xl mb-5 font-bold">navegação</h2>
+                    <ul class="space-y-3 text-base">
+                        <li><a href="fórmula 1.html" class="hover:text-red-400">home</a></li>
+                        <li><a href="pilotos.html" class="hover:text-red-400">pilotos</a></li>
+                        <li><a href="comparativo.html" class="hover:text-red-400">comparativo</a></li>
+                        <li><a href="contatos.html" class="hover:text-red-400">contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="bg-black/20 p-5 rounded-2xl border border-white/10">
+                    <h2 class="text-xl mb-5 font-bold">empresa</h2>
+                    <ul class="space-y-3 text-base">
+                        <li>carreiras</li>
+                        <li>blog</li>
+                        <li>privacidade</li>
+                        <li>termos</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="w-full bg-[#3d0000] text-white overflow-x-hidden border border-red-900 rounded-2xl p-6 sm:col-span-2 lg:col-span-1">
+                    <h2 class="text-2xl font-bold mb-2">newsletter</h2>
+
+                    <p class="text-gray-300 text-sm leading-6 mb-5">
+                        receba notícias da fórmula 1 diretamente no seu e-mail
+                    </p>
+
+                    <form class="flex flex-col gap-3">
+                        <input type="email" placeholder="digite seu e-mail"
+                            class="w-full h-12 px-4 rounded-xl bg-[#1a0000] border border-red-950 text-white outline-none">
+
+                        <button type="submit"
+                            class="w-full h-12 rounded-xl bg-red-950 hover:bg-black font-bold transition-all duration-300">
+                            enviar
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="mt-10 text-center text-sm sm:text-base md:text-xl text-gray-300">
+                &copy; 2026 fórmula 1. todos os direitos reservados.
+            </div>
+
+        </div>
+    </footer>
+    <script src="/js/f3.js"></script>
+
+</body>
+
+
+</html>

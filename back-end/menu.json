@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "home",
+    "link": "fórmula 1.html",
+    "active": true,
+    "external": false,
+    "icon": "bi-house"
+  },
+  {
+    "id": 2,
+    "title": "quem somos",
+    "link": "quem somos.html",
+    "active": true,
+    "external": false,
+    "icon": "bi-info-circle"
+  },
+  {
+    "id": 3,
+    "title": "pilotos",
+    "link": "pilotos.html",
+    "active": true,
+    "external": true,
+    "icon": "bi-bag"
+  },
+  {
+    "id": 4,
+    "title": "contatos",
+    "link": "contatos.html",
+    "active": true,
+    "external": false,
+    "icon": "bi-envelope"
+  },
+  {
+    "id": 5,
+    "title": "área restrita (promoções)",
+    "link": "admin.html",
+    "active": false,
+    "external": false,
+    "icon": "bi-lock"
+  }
+]
